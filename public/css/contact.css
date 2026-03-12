@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #111;
+}
+
+/* HERO */
+.contact-hero {
+    position: relative;
+    background:url("../images/RMGCHERO.png") center/cover no-repeat;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(27, 52, 92, 0.808); 
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    padding: 0 20px;
+}
+.contact-hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.contact-hero p {
+    font-size: 16px;
+    opacity: 0.95;
+}
+.contact-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+.contact-box {
+    max-width: 1100px;
+    width: 100%;
+}
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 60px;
+}
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-6px);
+}
+.card i {
+    font-size: 34px;
+    color: #1b345c;
+    background: #eef2f8;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+.card strong {
+    font-size: 15px;
+}
+
+.map-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
+.map-box h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.map-link {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.map-link img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+.map-link:hover img {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+
+    .contact-cards {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .card {
+        padding: 25px 15px;
+    }
+
+    .card i {
+        font-size: 24px;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        margin-bottom: 12px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .card strong {
+        font-size: 13px;
+    }
+
+    .contact-box{
+        max-width: 280px;
+        margin: auto;
+    }
+
+    .map-box {
+        padding: 25px;
+    }
+}

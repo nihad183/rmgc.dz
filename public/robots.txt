@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /rmgc-secret-dashboard
+Disallow: /rmgc-secret-dashboard/login
+Disallow: /rmgc-secret-dashboard/news
+Disallow: /storage/news
+
+Sitemap: https://rmgc.dz/sitemap.xml
