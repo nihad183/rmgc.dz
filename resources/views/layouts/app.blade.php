@@ -66,9 +66,9 @@
 
 <!-- Favicon -->
 <link rel="icon" href="{{ asset('images/RMGC-Holding.png') }}" type="image/png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+<link rel="icon" type="image/x-icon" sizes="192x192" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" sizes="96x96" href="/favicon.ico">
+<link rel="icon" type="image/x-icon" sizes="48x48" href="/favicon.ico">
 
 <!-- ===== Structured Data ===== -->
 @verbatim
@@ -186,7 +186,6 @@
 <script src="{{ asset('js/app.js') }}" defer></script>
 @stack('scripts')
 
-@endif
 
 </body>
 </html>
